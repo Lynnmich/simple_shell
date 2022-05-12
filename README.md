@@ -2,11 +2,11 @@
 
 **Table of contents**  
 
-What is shell?
-File description
-List of allowed functions and system calls
-Usage
-Collaborators  
+What is shell?   
+File description   
+List of allowed functions and system calls   
+Usage    
+Collaborators     
 
 **What is Shell?**  
 The shell is the layer of programming that understands and executes the commands a user enters. In some systems, the shell is called a command interpreter. 

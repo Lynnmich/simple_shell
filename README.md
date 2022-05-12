@@ -65,7 +65,7 @@ Step 4: Run the shell
 To exit the shell:   
 Press on Ctrl + D   
 
-**Collaborators**
+**Collaborators**   
 Lynne Michuki   
 Diana Gatwiri
 

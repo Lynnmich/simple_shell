@@ -1,7 +1,6 @@
 **0x16. C - Simple Shell**  
 
 **Table of contents**  
-
 What is shell?   
 File description   
 List of allowed functions and system calls   
@@ -15,9 +14,8 @@ This project is a simple version of the linux shell
 
 **File description**
 
-**List of allowed functions and system calls** 
+**List of allowed functions and system calls**   
 access (man 2 access)  
-
 chdir (man 2 chdir)  
 close (man 2 close)  
 closedir (man 3 closedir)  

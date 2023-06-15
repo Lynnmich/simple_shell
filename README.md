@@ -1,70 +1,45 @@
-**0x16. C - Simple Shell**  
-
-**Table of contents**  
-What is shell?   
-File description   
-List of allowed functions and system calls   
-Usage    
-Collaborators     
+# 0x16. C - Simple Shell
 
 **What is Shell?**  
+
 The shell is the layer of programming that understands and executes the commands a user enters. In some systems, the shell is called a command interpreter. 
+
 A shell usually implies an interface with a command syntax.   
+
 This project is a simple version of the linux shell  
 
-**File description**
+The shell should display a prompt, wait for the user to enter a command, execute the command, and display the prompt again. The shell should handle command lines with arguments and should handle the PATH to locate executables. It should also handle the "end of file" condition (Ctrl+D) and display error messages when an executable cannot be found.
 
-**List of allowed functions and system calls**   
-access (man 2 access)  
-chdir (man 2 chdir)  
-close (man 2 close)  
-closedir (man 3 closedir)  
-execve (man 2 execve)  
-exit (man 3 exit)    
-_exit (man 2 _exit)    
-fflush (man 3 fflush)    
-fork (man 2 fork)     
-free (man 3 free)  
-getcwd (man 3 getcwd)  
-getline (man 3 getline)  
-getpid (man 2 getpid)  
-isatty (man 3 isatty)   
-kill (man 2 kill)   
-malloc (man 3 malloc)   
-open (man 2 open)   
-opendir (man 3 opendir)   
-perror (man 3 perror)   
-read (man 2 read)   
-readdir (man 3 readdir)   
-signal (man 2 signal)   
-stat (__xstat) (man 2 stat)   
-lstat (__lxstat) (man 2 lstat)    
-fstat (__fxstat) (man 2 fstat)    
-strtok (man 3 strtok)    
-wait (man 2 wait)   
-waitpid (man 2 waitpid)   
-wait3 (man 2 wait3)   
-wait4 (man 2 wait4)   
-write (man 2 write)   
- 
-**Usage**    
-Step 1: Clone our repository using this command, (you need to have git installed on your machine first)   
-git clone https://github.com/Lynnmich/simple_shell    
+**The project tasks involve implementing different features in the shell:**
 
-Step 2: Change directory to simple_shell:   
-cd simple_shell    
+Implement a basic version of the shell that meets the requirements specified in the project description.
 
-Step 3: Compile the C files in this way:   
-gcc -Wall -Werror -Wextra -pedantic *.c -o hsh   
+Modify the shell to handle command lines with arguments.
 
-Step 4: Run the shell   
-./hsh    
+Update the shell to handle the PATH variable and avoid calling fork if the command doesn't exist.
 
-To exit the shell:   
-Press on Ctrl + D   
+Implement the exit built-in command that allows the user to exit the shell.
+
+Implement the env built-in command that prints the current environment.
+
+Write your own getline function instead of using the standard getline function.
+
+Avoid using strtok in your implementation.
+
+Handle arguments for the built-in exit command.
+
+Implement the setenv and unsetenv built-in commands to initialize, modify, or remove environment variables.
+
+Implement the cd built-in command to change the current directory.
+
+Handle the semicolon (;) operator to execute commands sequentially.
+
+Handle the logical operators (&& and ||) to execute commands conditionally based on the success or failure of previous commands. 
 
 **Collaborators**   
+
 Lynne Michuki   
+
 Diana Gatwiri
 
 
